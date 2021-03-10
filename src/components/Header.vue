@@ -6,6 +6,12 @@
                 <img class="brand-logo" src="../assets/YU-logo-17-white-cropped.png" alt="">
             </div>
         </div>
+
+        <nav>
+            <router-link to="/" class="nav-link">Home</router-link>
+            <router-link to="/about" class="nav-link">Who are YU?</router-link>
+        </nav>
+        <router-view/>
     </header>
 
 </template>
@@ -19,7 +25,9 @@ export default {
 
 <style>
 
-/*******    STYLES RELATING TO THE BRAND LOGO                *******/
+/*********************************************
+/ STYLES RELATING TO THE BRAND LOGO                
+/********************************************/
 
 #logo-container {
     display: flex;
@@ -41,5 +49,27 @@ export default {
 .brand-logo {
     width: 90%;
 }
+
+/*********************************************
+/ STYLES RELATING TO THE NAVIGATION BAR             
+/********************************************/
+
+nav {
+    margin: 70px 0px 0px 0px;
+    padding: 8px;
+    background-color: #324B4A;
+    text-align:center;
+}
+
+a {
+    color: #E1E8ED;
+    padding: 0px 16px;
+}
+
+/* Change the link color on hover */
+a:hover {
+    font-weight: 700;
+}
+
 
 </style>
