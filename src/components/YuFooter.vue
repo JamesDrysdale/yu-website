@@ -1,15 +1,16 @@
 <template>
 
     <footer>
+        <span class="wave">👋</span> <a href="mailto:hello&#64;you-understood.com">Contact Us</a>
+        
         <section class="social-icons">
             <a href="https://www.facebook.com/YuUnderstood" target="_blank"><img src="../assets/social/facebook.png" alt="Visit us on Facebook"></a>
             <a href="https://www.instagram.com/yuunderstood/" target="_blank"><img src="../assets/social/instagram.png" alt="Visit us on Instagram"></a>
             <a href="https://www.linkedin.com/company/youunderstood/" target="_blank"><img src="../assets/social/linkedin.png" alt="Visit us on LinkedIn"></a>
             <a href="https://twitter.com/Yu_Understood" target="_blank"><img src="../assets/social/twitter.png" alt="Visit us on Twitter"></a>
         </section>
-        <p><span class="wave">👋</span> <a href="mailto:hello&#64;you-understood.com" class="contact-link">Contact Us</a></p>
 
-        <p class="legal-link"><a href="/privacy-policy-gdpr.html" ><small>Privacy Policy & GDPR</small></a></p>
+        <router-link to="/privacy-policy-gdpr">Privacy Policy & GDPR</router-link>
 
     </footer>
 
@@ -17,7 +18,7 @@
 
 <script>
 export default {
-
+    name: 'YU-Footer'
 }
 </script>
 
@@ -26,15 +27,13 @@ export default {
 footer {
     margin: 0px 0px 0px 0px;
     padding: 20px 20px;
-    text-align: right;
+    
     background-color: #324B4A;
     color: #E1E8ED;
 }
 
 .social-icons img {
-    float: left;
-    padding-right: 25px;
-    padding-top: 10px;
+    padding: 24px 25px;
     width: 25px;
 }
 
@@ -45,14 +44,6 @@ footer a {
 
 footer a:hover {
     color: #36C9C6;
-}
-
-.legal-link {
-    text-align: center;
-}
-
-.contact-link {
-    font-weight: 700;
 }
 
 /*********************************************
