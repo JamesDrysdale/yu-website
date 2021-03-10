@@ -1,19 +1,19 @@
 <template>
-  <Header />
+  <YuHeader />
 
-  <Footer />
+  <YuFooter />
 </template>
 
 <script>
-import Header from '../src/components/Header'
-import Footer from '../src/components/Footer'
+import YuHeader from '../src/components/YuHeader'
+import YuFooter from '../src/components/YuFooter'
 
 
 export default {
   name: 'Home',
   components: {
-    Header,
-    Footer
+    YuHeader,
+    YuFooter
   }
 }
 
