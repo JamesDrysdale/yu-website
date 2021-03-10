@@ -46,11 +46,6 @@ footer a:hover {
     color: #36C9C6;
 }
 
-/* .contact-link {
-    font-weight: 700;
-    float: right;
-} */
-
 /*********************************************
 / STYLES TO ANIMATE HAND EMOJI               
 /********************************************/
